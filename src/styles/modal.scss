@@ -1,0 +1,54 @@
+.modalOverlay {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: $black;
+  display: none;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
+  &.active {
+    display: block;
+  }
+
+  .modalContent {
+    background-color: $purple;
+    border-radius: 10px;
+    font-size: 1.5em;
+    left: 50%;
+    margin: 0;
+    padding: 2.5em;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    .modalTitle {
+      text-align: center;
+    }
+
+    ul {
+      padding: 10px;
+
+      li {
+        margin-bottom: 10px;
+        list-style-type: none;
+      }
+    }
+  }
+
+  button {
+    margin: 2.5em;
+    min-width: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    @include tablet {
+      min-width: 100px;
+    }
+    @include desktop {
+      min-width: 100px;
+    }
+  }
+}

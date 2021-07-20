@@ -1,0 +1,15 @@
+input[type=range] {
+  background: transparent;
+  height: 25px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+
+  &::-webkit-slider-runnable-track { @include track }
+  &::-moz-range-track { @include track }
+  &::-ms-track { @include track }
+
+  &::-webkit-slider-thumb { @include thumb }
+  &::-moz-range-thumb{ @include thumb }
+  &::-ms-thumb { @include thumb }
+}

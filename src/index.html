@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Indeed Test</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./styles/index.scss">
+</head>
+
+<body>
+  <main>
+    <header>
+      <div class="leftSide">
+        <div class="scoreContainer">
+          <div><span id="currentScore"></span></div>
+        </div>
+      </div>
+    </header>
+    <div class="gameBoard"></div>
+  </main>
+  <aside class="controls">
+    <div class="gameButtons">
+      <div class="startContainer">
+        <button class="btn" id="startButton">Start</button>
+      </div>
+      <div class="resetContainer">
+        <button class="btn" id="resetButton">Restart</button>
+      </div>
+    </div>
+    <div class="sliderContainer">
+      <label for="speed-control"></label>
+      <input name="speed-control" type="range" min="10" max="100" step="10" class="slider" id="speedControl">
+    </div>
+    <div class="speedContainer">Speed:<div id="currentSpeed"></div>
+    </div>
+    <div class="menuContainer">
+      <button class="btn" id='instructions'>
+        <span>?</span>
+      </button>
+    </div>
+  </aside>
+  <div class="modalOverlay">
+    <div class="closeContainer">
+      <button class="close btn">X</button>
+    </div>
+    <div class="modalContent">
+      <h1 class="modalTitle">Instructions</h1>
+      <ul>
+        <li>Good with the test</li>
+      </ul>
+    </div>
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
